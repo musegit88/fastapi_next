@@ -20,7 +20,7 @@ countries.forEach((country) => {
 
   const populateDb = async () => {
     // @ts-expect-error
-    await redis.zadd("2chars", ...chars);
+    await redis.zadd("chars", ...chars);
   };
   populateDb();
 });
